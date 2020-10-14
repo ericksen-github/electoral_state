@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("main"),document.getElementById("svgLocation").src="../dist/svgs/Alabama_counties.svg"})();
