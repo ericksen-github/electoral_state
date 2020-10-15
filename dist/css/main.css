@@ -9,8 +9,12 @@
 
 #svgHome {
   width: 50%;
-  text-align: center;
+  height: 50vh;
   margin: auto;
+}
+
+.state:hover {
+  opacity: 0.5;
 }
 
 .stateOutline {

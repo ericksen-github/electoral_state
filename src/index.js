@@ -1,2 +1,8 @@
-import { sortSVG } from "./mapSVG";
-sortSVG("alabama");
+import { usa } from "./usaSVG";
+import { mainSort } from "./mainSort";
+
+document.getElementById("svgHome").innerHTML = usa;
+
+mainSort();
+
+//sortSVG("alabama");

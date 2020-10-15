@@ -4,7 +4,7 @@ import { insertInfo } from "./stateInfo";
 const sortSVG = (state) => {
   const main = document.getElementById("main");
 
-  if (state == "alabama") {
+  if (state == "AL") {
     document.getElementById("mainTitle").innerHTML = "Alabama";
     document.getElementById("svgHome").innerHTML = alabama;
     showInfo(state);
