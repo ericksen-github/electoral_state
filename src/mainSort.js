@@ -2,8 +2,7 @@ import { sortSVG } from "./mapSVG";
 
 const mainSort = () => {
   const states = document.getElementsByClassName("state");
-
-  let statesArray = [...states];
+  const statesArray = [...states];
 
   statesArray.forEach((ele) => {
     ele.addEventListener("click", (e) => {
@@ -12,18 +11,15 @@ const mainSort = () => {
     });
   });
 
-  console.log(statesArray);
+  const dropDown = document.getElementsByTagName("option");
+  const dropDownArray = [...dropDown];
 
-  //   const counties = document.getElementsByClassName("counties");
-  //   let countiesArray = [...counties];
-
-  //   countiesArray.forEach((ele) => {
-  //     ele.addEventListener("click", (e) => {
-  //       const name = e.target.id;
-  //       document.getElementById("infoBox").style.display = "block";
-  //       insertInfo(state, name);
-  //     });
-  //   });
+  dropDownArray.forEach((ele) => {
+    ele.addEventListener("click", (e) => {
+      const name = e.target.value;
+      sortSVG(name);
+    });
+  });
 };
 
 export { mainSort };

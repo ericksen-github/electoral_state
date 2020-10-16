@@ -4,5 +4,3 @@ import { mainSort } from "./mainSort";
 document.getElementById("svgHome").innerHTML = usa;
 
 mainSort();
-
-//sortSVG("alabama");

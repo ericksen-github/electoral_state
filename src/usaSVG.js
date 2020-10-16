@@ -4,8 +4,6 @@ const usa = `<svg xmlns="http://www.w3.org/2000/svg" width="100%"  viewBox="0 0 
   <style type="text/css">
 
 
-.state {fill:#D3D3D3;}
-
 
 /*
 The .state class sets the default fill color for all states.
@@ -16,9 +14,6 @@ Individual states (such as Kansas, Montana, Pennsylvania) can be colored as foll
 
 Place this code in the empty space below.
 */
-
-
-
 
 
   </style>
@@ -180,7 +175,7 @@ Place this code in the empty space below.
     <circle id="DC2" stroke="#FFFFFF" stroke-width="1.5" cx="801.3" cy="251.8" r="5" opacity="1"/> <!-- Set opacity to "0" to hide DC circle -->
   </g>
 </g>
-<path id="frames" fill="none" stroke="#A9A9A9" stroke-width="2" d="M215 493v55l36 45M0 425h147l68 68h85l54 54v46"/>
+
 </svg>`;
 
 export { usa };

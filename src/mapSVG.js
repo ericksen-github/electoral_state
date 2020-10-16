@@ -2,6 +2,8 @@ import { alabama } from "./states/alabama";
 import { insertInfo } from "./stateInfo";
 
 const sortSVG = (state) => {
+  document.getElementById("stateDropDown").style.display = "none";
+
   const main = document.getElementById("main");
 
   if (state == "AL") {
