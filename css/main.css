@@ -8,9 +8,13 @@
 }
 
 #svgHome {
-  width: 50%;
   height: 50vh;
   margin: auto;
+  padding-left: 1rem;
+}
+
+.state {
+  fill: rgb(172, 172, 172);
 }
 
 .state:hover {
@@ -41,4 +45,8 @@
   display: none;
   margin: auto;
   padding: 2rem;
+}
+
+#AL {
+  fill: rgb(252, 77, 77);
 }
