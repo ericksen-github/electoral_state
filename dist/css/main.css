@@ -7,10 +7,14 @@
   margin-bottom: 1rem;
 }
 
-#svgHome {
-  height: 50vh;
+.svgContainer {
+  width: 90%;
   margin: auto;
-  padding-left: 1rem;
+}
+
+#ALSVG {
+  width: 80%;
+  margin: auto;
 }
 
 .state {
