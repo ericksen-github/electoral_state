@@ -1,4 +1,4 @@
-const usa = `<svg xmlns="http://www.w3.org/2000/svg" width="100%"  viewBox="-35 0 1000 650">
+const usa = `<svg  id = "usMap" xmlns="http://www.w3.org/2000/svg" width="100%"  viewBox="-35 0 1000 650">
 <title>Blank US states map</title>
 <defs>
   <style type="text/css">

@@ -1,16 +1,9 @@
-import { sortSVG } from "./mapSVG";
+import { sortSVG } from "./sortSVG";
 
 const mainSort = () => {
-  const states = document.getElementsByClassName("state");
-  const statesArray = [...states];
+  addStateListeners();
 
-  statesArray.forEach((ele) => {
-    ele.addEventListener("click", (e) => {
-      const name = e.target.id;
-      sortSVG(name);
-    });
-  });
-
+  // adds click on each dropdown element
   const dropDown = document.getElementsByTagName("option");
   const dropDownArray = [...dropDown];
 
@@ -22,4 +15,18 @@ const mainSort = () => {
   });
 };
 
-export { mainSort };
+const addStateListeners = () => {
+  // adds click on each state on usa map
+  const states = document.getElementsByClassName("state");
+  const statesArray = [...states];
+
+  statesArray.forEach((ele) => {
+    ele.addEventListener("click", (e) => {
+      const name = e.target.id;
+
+      sortSVG(name);
+    });
+  });
+};
+
+export { mainSort, addStateListeners };
