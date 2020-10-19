@@ -8,8 +8,20 @@
 }
 
 .svgContainer {
+  display: none;
   width: 90%;
   margin: auto;
+  animation: slide-up 1.5s ease;
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #ALSVG {
@@ -23,6 +35,14 @@
 
 .state:hover {
   opacity: 0.5;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .stateOutline {
