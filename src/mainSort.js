@@ -23,6 +23,7 @@ const addStateListeners = () => {
   statesArray.forEach((ele) => {
     ele.addEventListener("click", (e) => {
       const name = e.target.id;
+      document.getElementById("usMap").style.animation = "slideOut 1.5s ease;";
 
       sortSVG(name);
     });

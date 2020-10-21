@@ -1,4 +1,5 @@
 import { alabama } from "./states/alabama";
+import { ohio } from "./states/ohio";
 import { usa } from "./usaSVG";
 import { insertInfo } from "./stateInfo";
 import { addStateListeners } from "./mainSort";
@@ -13,6 +14,10 @@ const sortSVG = (state) => {
   if (state == "AL") {
     document.getElementById("mainTitle").innerHTML = "Alabama";
     document.getElementById("svgHome").innerHTML = alabama;
+    showInfo(state);
+  } else if ((state = "OH")) {
+    document.getElementById("mainTitle").innerHTML = "Ohio";
+    document.getElementById("svgHome").innerHTML = ohio;
     showInfo(state);
   }
 };
