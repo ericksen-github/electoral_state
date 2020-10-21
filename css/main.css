@@ -8,25 +8,41 @@
 }
 
 .svgContainer {
-  display: none;
   width: 90%;
   margin: auto;
-  animation: slide-up 1.5s ease;
 }
-@keyframes slide-up {
+
+#usMap {
+  animation: slideIn 1.5s ease;
+  transition: 1s;
+}
+
+@keyframes slideIn {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translate(50px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50px);
   }
 }
 
 #ALSVG {
   width: 80%;
   margin: auto;
+  animation: slideIn 1.5s ease;
 }
 
 .state {
